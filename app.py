@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="OI Stats List", page_icon="", layout="wide")
+st.set_page_config(page_title="OI Stats List", layout="wide")
 
 if "counter" not in st.session_state:
     st.session_state.counter = 1
