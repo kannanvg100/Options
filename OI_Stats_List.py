@@ -4,12 +4,12 @@ import pandas as pd
 import plotly.express as px
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="OI Stats List", layout="wide")
+st.set_page_config(page_title="OI Stats List", page_icon="", layout="wide")
 
-if "counter" not in st.session_state:
+if 'counter' not in st.session_state:
     st.session_state.counter = 1
 
-st.write("")
+st.header("")
 
 uploaded_file = st.file_uploader("Upload Files",type=['csv'])
 if uploaded_file is not None:
