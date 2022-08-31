@@ -161,7 +161,7 @@ if uploaded_file is not None:
                     title=""
                 )
 
-            coi_chart.update_layout(showlegend=False, margin_l=0, margin_r=0)
+            coi_chart.update_layout(showlegend=False, dragmode=False, margin_l=0, margin_r=0)
             coi_chart.add_vline(atm_strike, line_width=1, line_dash="dash", line_color="black", annotation_text="Future Price: "+ str(fut_price), annotation_position="top")
             coi_chart.update_layout(hovermode='x unified', font=dict(
                 size=16
